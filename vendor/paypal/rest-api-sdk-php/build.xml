@@ -29,7 +29,7 @@
 
 	<target name="phplint">		
 		<delete file="${phplint.out}"/>
-		<apply executable="php.bat" failonerror="true" output="${phplint.out}" append="true">
+		<apply executable="php" failonerror="true" output="${phplint.out}" append="true">
 			<arg value="-l" />
 			<fileset refid="src.files" />
 		</apply>
